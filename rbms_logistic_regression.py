@@ -72,6 +72,11 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y,
                                                     test_size=0.2,
                                                     random_state=0)
 
+print X_train.shape
+print X_train
+
+print Y_train.shape
+print Y_train
 
 
 # In[4]:
@@ -143,6 +148,20 @@ plt.suptitle('100 components extracted by RBM', fontsize=16)
 plt.subplots_adjust(0.08, 0.02, 0.92, 0.85, 0.08, 0.23)
 
 plt.show()
+
+
+
+## plt.figure(figsize=(4.2, 4))
+## for i, comp in enumerate(X_train[0:100,:]):
+##     plt.subplot(10, 10, i + 1)
+##     plt.imshow(comp.reshape((8, 8)), cmap=plt.cm.gray_r,
+##                interpolation='nearest')
+##     plt.xticks(())
+##     plt.yticks(())
+## plt.subplots_adjust(0.08, 0.02, 0.92, 0.85, 0.08, 0.23)
+
+## plt.show()
+
 
 
 # In[ ]:
